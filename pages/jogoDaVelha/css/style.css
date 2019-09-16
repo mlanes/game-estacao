@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  align-items: center;
+  background-color: #ffc0cb;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 70px;
+}
+section#player-type{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+section#player-type button{
+  background-color: #f03151;
+  border: 2px solid #ab1730;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 50px; 
+  padding: 10px 20px;
+  transition: all 0.3s;
+}
+section#player-type button:hover{
+  background-color: #fff;
+  color: #ab1730;
+}
+section#jogo-da-velha{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+table, th, td {
+  border: 1px solid black;
+}
+td{
+  padding: 54px;
+}
