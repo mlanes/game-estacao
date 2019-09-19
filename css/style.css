@@ -14,7 +14,7 @@ body{
 header{
     color: black;
     display: inline-grid; 
-    height: 350px;
+    height: 500px;
     text-align: center;  
 }
 nav{
@@ -29,7 +29,9 @@ h1{
     margin: 70px;
 }
 p{
-padding: 6px;}
+    font-size: 25px;
+    padding: 6px;
+}
 footer{
     align-items: center;
     color: #ffc0cb;
