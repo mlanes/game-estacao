@@ -75,13 +75,8 @@ function verify(valueElement) {
     }, 250);
   } else if (
     ((item11 != '') && (item12 != '') && (item13 != ''))
-    && ((item11 != '') && (item22 != '') && (item33 != ''))
-    && ((item11 != '') && (item21 != '') && (item31 != ''))
     && ((item21 != '') && (item22 != '') && (item23 != ''))
     && ((item31 != '') && (item32 != '') && (item33 != ''))
-    && ((item12 != '') && (item22 != '') && (item32 != ''))
-    && ((item13 != '') && (item23 != '') && (item33 != ''))
-    && ((item31 != '') && (item22 != '') && (item13 != ''))
   ) {
     setTimeout(() => {
       alert('Deu Velha!');
