@@ -64,7 +64,7 @@ function verif(valueElement) {
     setTimeout(() => {
       alert( `O jogador ${valueElement} ganhou, parabéns campeão!`);
       newGame();
-    }, 500);
+    }, 250);
   } else if (((item11 != '') && (item12 != '') && (item13 != ''))
     && ((item11 != '') && (item22 != '') && (item33 != ''))
     && ((item11 != '') && (item21 != '') && (item31 != ''))
@@ -76,7 +76,7 @@ function verif(valueElement) {
     setTimeout(() => {
       alert('Deu Velha!');
       newGame();
-    }, 500);
+    }, 250);
   }
 }
 
