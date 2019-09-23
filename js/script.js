@@ -23,6 +23,7 @@ function playerX(event) {
         document.querySelector('#player-type h3 span').className = 'letterO';
       }
     }
+    console.log(elementsTable);
     verify(target.innerHTML);
   } else {
     alert('Selecione um jogador para começar o game :)');
@@ -49,15 +50,15 @@ for (buttonTypePlayer of buttonTypePlayers) {
 }
 
 function verify(valueElement) {
-  let item11 = document.getElementById('item11').innerHTML;
-  let item12 = document.getElementById('item12').innerHTML;
-  let item13 = document.getElementById('item13').innerHTML;
-  let item21 = document.getElementById('item21').innerHTML;
-  let item22 = document.getElementById('item22').innerHTML;
-  let item23 = document.getElementById('item23').innerHTML;
-  let item31 = document.getElementById('item31').innerHTML;
-  let item32 = document.getElementById('item32').innerHTML;
-  let item33 = document.getElementById('item33').innerHTML;
+  let item11 = elementsTable[0].innerText;
+  let item12 = elementsTable[1].innerText;
+  let item13 = elementsTable[2].innerText;
+  let item21 = elementsTable[3].innerText;
+  let item22 = elementsTable[4].innerText;
+  let item23 = elementsTable[5].innerText;
+  let item31 = elementsTable[6].innerText;
+  let item32 = elementsTable[7].innerText;
+  let item33 = elementsTable[8].innerText;
 
   if (
     ((item11 != '') && (item12 != '') && (item13 != '') && (item11 == item12) && (item12 == item13))
