@@ -11,12 +11,14 @@ function playerX(event) {
       alert("Opa, este quadrado já foi escolhido!");
     } else {
       target.innerHTML = letter;
+      letter === "X" ? target.className = 'letterX' : target.className = 'letterO'; 
       if (letter == "X") {
         letter = "O";
       } else {
         letter = "X";
       }
-      document.querySelector('#player-type h3').innerHTML = `É a vez do Jogador "${letter}"`;
+      document.querySelector('#player-type h3').innerHTML = `É a vez do <span>Jogador "${letter}"</span>`;
+      letter === "X" ? document.querySelector('#player-type h3 span').className = 'letterX' : document.querySelector('#player-type h3 span').className = 'letterO'; 
     }
     verif(target.innerHTML);
   } else {
@@ -34,7 +36,8 @@ function chooseTypePlayer(event) {
     letter = 'O';
   }
   console.log(letter);
-  document.querySelector('#player-type h3').innerHTML = `O ${event.srcElement.innerText} vai começar`;
+  document.querySelector('#player-type h3').innerHTML = `O <span>${event.srcElement.innerText}</span> vai começar`;
+  letter === "X" ? document.querySelector('#player-type h3 span').className = 'letterX' : document.querySelector('#player-type h3 span').className = 'letterO'; 
   buttonTypePlayers[0].setAttribute('disabled', 'disabled');
   buttonTypePlayers[1].setAttribute('disabled', 'disabled'); 
 };

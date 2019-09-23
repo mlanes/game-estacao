@@ -1,12 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
   outline: 0;
 }
-body{
+
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
-header{
+
+header {
   align-items: center;
   background-color: #ffc0cb;
   color: #fff;
@@ -14,48 +16,77 @@ header{
   justify-content: center;
   height: 70px;
 }
-section#player-type{
+
+.letterX{
+  color: red;
+  transition: color .4s
+}
+
+.letterO{
+  color: blue;
+  transition: color .4s
+}
+
+section#player-type {
   text-align: center;
 }
-section#player-type div{
+
+section#player-type div {
   align-items: center;
   display: flex;
   justify-content: center;
   margin: 20px 0;
 }
-section#player-type div button, section#player-type div button[disabled]:hover{
+
+section#player-type div button,
+section#player-type div button[disabled]:hover {
   background-color: #f03151;
   border: 2px solid #ab1730;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  margin: 0 50px; 
+  margin: 0 50px;
   padding: 10px 20px;
   transition: all 0.3s;
 }
-section#player-type div button:hover{
+
+section#player-type div button:hover {
   background-color: #fff;
   color: #ab1730;
 }
-section#player-type div button[disabled]{
+
+section#player-type div button[disabled] {
   opacity: .4;
   cursor: default;
 }
-section#jogo-da-velha{
+
+section#jogo-da-velha {
   align-items: center;
   display: flex;
   justify-content: center;
   margin: 20px 0;
 }
+
 table {
-  border: .5px solid #7e0e21;
+  border: 1px solid #7e0e21;
   border-radius: 10px;
   background-color: #7e0e21;
   padding: 2px;
 }
-td{
+
+td {
   background-color: #fff;
   border-radius: 5px;
+  display: flex;
   cursor: pointer;
-  padding: 54px;
+  font-size: 50px;
+  margin: 3px;
+  justify-content: center;
+  align-items: center;
+  width: 128px;
+  height: 128px;
+}
+
+tr {
+  display: flex;
 }
