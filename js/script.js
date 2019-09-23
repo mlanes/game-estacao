@@ -23,7 +23,6 @@ function playerX(event) {
         document.querySelector('#player-type h3 span').className = 'letterO';
       }
     }
-    console.log(elementsTable);
     verify(target.innerHTML);
   } else {
     alert('Selecione um jogador para começar o game :)');
