@@ -5,34 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
-  <title>Game Estação</title>
+  <script defer src="js/script.js"></script>
+  <title>Jogo da Velha</title>
 </head>
 <body>
-  <nav>
-      <script>
-          function abreLink(){
-            window.open("file:///C:/Users/joaof/Desktop/programacao/game-estacao/pages/jogoDaVelha/index.html");
-          }
-          </script>
-          <a href="#" onclick="abreLink();">Divirta-se</a>
-          <script>
-              function abreLink(){
-                window.open("file:///C:/Users/joaof/Desktop/programacao/game-estacao/pages/jogoDaVelha/index.html");
-              }
-              </script>
-              <a href="#" onclick="abreLink();">jogando</a>
-  </nav>
-<header>
-    <h1>Projeto Jogo da Velha</h1>
-      <p>O jogo da velha ou jogo do galo ou três em linha é um jogo e passatempo popular. É um jogo de regras extremamente simples, que não traz grandes dificuldades para seus jogadores e é facilmente aprendido. A origem é desconhecida, com indicações de que pode ter começado no antigo Egito, onde foram encontrados tabuleiros esculpidos na rocha, que teriam mais de 3.500 anos. De alguma forma, é um jogo "aparentado" dos "Merels".
-      
-     Algumas lendas urbanas contam que o jogo terá nascido em Portugal, na cidade de Almada no ano 545. No entanto, só foi popularizado no ano 1500, pelo descobridor Pedro Álvares Cabral, que adorava jogar este jogo durante as suas viagens. Álvares Cabral terá decidido que este jogo seria o primeiro a ser ensinado ao povo indígena no Brasil.</p>
-</header>
-<footer>
-    <a href="https://github.com/maletopvp/game-estacao" target="_blank">Deixe seu like</a>
-    <img src="images/facebook.png" alt="icone-face">
-    <link rel="stylesheet" href="">
-</footer>
+  <header>
+    <h1>Jogo da Velha</h1>
+  </header>
+  <section id="player-type">
+    <div>
+        <button>Jogador <strong>"X"</strong></button>
+        <button>Jogador <strong>"O"</strong></button>
+    </div>
+    <h3></h3>
+  </section>
+  <section id="jogo-da-velha">
+    <table>
+      <tr>
+        <td id="item11" scope="row"></td>
+        <td id="item12" scope="row"></td>
+        <td id="item13" scope="row"></td>
+      </tr> 
+      <tr>
+        <td id="item21" scope="row"></td>
+        <td id="item22" scope="row"></td>
+        <td id="item23" scope="row"></td>
+      </tr>
+      <tr>
+        <td id="item31" scope="row"></td>
+        <td id="item32" scope="row"></td>
+        <td id="item33" scope="row"></td>
+      </tr>
+    </table>
+  </section>
 </body>
 </html>
