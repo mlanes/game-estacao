@@ -91,3 +91,12 @@ td {
 tr {
   display: flex;
 }
+aside {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 300px;
+}
+aside input {
+  height: 25px;
+  width: 85px;
+}
