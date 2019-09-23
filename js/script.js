@@ -28,11 +28,12 @@ for (elementTable of elementsTable) {
 }
 
 function chooseTypePlayer(event) {
-  if (event.srcElement.innerText == 'Jogador "X"') {
+  if (event.srcElement.innerText === 'Jogador "X"') {
     letter = 'X';
   } else {
     letter = 'O';
   }
+  console.log(letter);
   document.querySelector('#player-type h3').innerHTML = `O ${event.srcElement.innerText} vai começar`;
   buttonTypePlayers[0].setAttribute('disabled', 'disabled');
   buttonTypePlayers[1].setAttribute('disabled', 'disabled'); 
